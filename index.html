@@ -1,7 +1,10 @@
 <h1>Contador</h1>
 <p>0</p>
-<button>Mais</button>
+<button onclick="aumentar()">Mais</button>
 <script>
   var numero = 8;
-  document.querySelector("p").innerText = numero;
+  function aumentar() {
+    numero = numero + 1;
+    document.querySelector("p").innerText = numero;
+  }
 </script>
